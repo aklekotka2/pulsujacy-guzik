@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background: #ececec;
+  font-weight: 500;
+  color: #5c1d92;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.click-here {
+  font-size: 52px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #bd70fe;
+  text-transform: lowercase;
+  background-color: white;
+  border: 0;
+  padding: 0;
+  width: 425px;
+  height: 425px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .25);
+  cursor: pointer;
+ /* transform: scale(1);
+  transition: transform 0.9s ease-in, background-color 2.3s ease-in-out, color 1.3s linear; */
+  /*jeśli tak samo 2 wlasciwosci z 3
+  transition: 1.5sek ease-out;
+  transition-property: color, transform;
+
+  */
+  animation-name: movebutton;
+  animation-duration: 5s;
+  animation-timing-funtion: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+/*.click-here:hover {
+  transform: scale(1.2);
+  background-color: #000000;
+  color: #ffffff;
+  )*/
+
+@keyframes movebutton{
+  0%{
+    transform: scale(1) rotate(0deg);
+
+  }
+
+  
+   100%{
+    transform: scale(1.5) rotate(359deg);
+    color: red;
+    background: #dddddd;
+    border: 1px solid #dddddd;
+  }
+}
